@@ -10,7 +10,7 @@
             
 table {
     
-  font-family: arial, sans-serif;
+  font-family: sans-serif;
   border-spacing: 5px;
   width: 100%;
 }
@@ -28,8 +28,10 @@ tr:nth-child(even) {
     </head>
     
     <body>        
-        <h2 style="color:dodgerblue;">Listado de productos</h2>         
-        
+        <h2 style="color:dodgerblue;font-size:30px;">Listado de productos</h2>
+        <hr style="border-color:orange;"> 
+        <br>
+        <br>             
         
         <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/inventario" 
                            user="root" password="megabriel1" />
@@ -46,8 +48,7 @@ tr:nth-child(even) {
                     <th style="color:tomato">ID del nombre</th>
                     <th style="color:tomato">Nombre del producto</th>
                     <th style="color:tomato">ID de la categoria</th>                    
-                    <th style="color:tomato">Nombre de la categoria</th>
-                    <th style="color:tomato">ID de los productos</th>
+                    <th style="color:tomato">Nombre de la categoria</th>                    
                 </tr>                    
                 
                 <c:forEach var="row" items="${Productos.rows}" >
@@ -55,8 +56,7 @@ tr:nth-child(even) {
                         <td><c:out value="${row.ID_nombre}"/></td>    
                         <td><c:out value="${row.nombre_producto}"/></td>    
                         <td><c:out value="${row.ID_categoria}"/></td>    
-                        <td><c:out value="${row.nombre_categoria}"/></td>
-                        <td><c:out value="${row.ID_productos}"/></td>
+                        <td><c:out value="${row.nombre_categoria}"/></td>                        
                         
                     </tr>    
                     

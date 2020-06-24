@@ -8,25 +8,32 @@
         </style>
     </head>
     <body>
-        <h1>¡Bienvenido a la base de datos del supermercado!</h1>      
+        <h2 style="color:dodgerblue;font-size:30px;">¡Bienvenido a la base de datos de Mi Super!</h2>
+        <hr style="border-color:orange;">         
         <a href="jstl.jsp"></a>
         <a href="segundo.jsp"></a>
         <br/>        
         <form action="Servlet" method="post" >
-            <h3>Para ingresar un nuevo producto por favor proporcionar los siguientes datos:</h3>
+            <h3 style="color:tomato;">Para ingresar un nuevo producto por favor proporcionar los siguientes datos:</h3>            
+            <br/>
+            <label>- ID del producto</label>
+            <input type="text" name="ID_producto" />
+            <br/>            
             <label>- Nombre del producto</label>
             <input type="text" name="nombre_producto" />
             <br/>
-            <label>- Categoria del producto</label>
+            <label>- ID de la categoria</label>
+            <input type="text" name="nombre_producto" />
+            <br/>
+            <label>- Nombre de la categoria del producto</label>
             <input type="text" name="nombre_categoria" />   
-            <br/>   
+            <br/>       
             <input type="submit" value="Crear" />
             <br/>
             <br/>
         </form>        
-
-            <h3><a href="http://localhost:8080/Inventario-1.0-SNAPSHOT/jstl.jsp">Ver el listado de los productos</a></h3>
-            <h3><a href="http://localhost:8080/Inventario-1.0-SNAPSHOT/Servlet">Productos recien ingresados</a></h3>             
+            
+            <h3><a href="http://localhost:8080/Inventario-1.0-SNAPSHOT/Servlet">Ver el listado de los productos</a></h3>             
             <br/>            
     </body>
 </html>
