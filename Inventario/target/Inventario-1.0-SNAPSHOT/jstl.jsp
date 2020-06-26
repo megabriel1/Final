@@ -28,6 +28,9 @@ tr:nth-child(even) {
     </head>
     
     <body>        
+        <STYLE type="text/css">
+        h2 { text-align: center}
+        </STYLE>
         <h2 style="color:dodgerblue;font-size:30px;">Listado de productos</h2>
         <hr style="border-color:orange;"> 
         <br>

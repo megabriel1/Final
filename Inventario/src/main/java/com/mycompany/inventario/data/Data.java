@@ -2,6 +2,8 @@
 package com.mycompany.inventario.data;
 
 public class Data {
+    
+
 
     String ID_nombre;
     String nombre_producto;
@@ -45,5 +47,7 @@ public class Data {
 
     public void setNombre_categoria(String nombre_categoria) {
         this.nombre_categoria = nombre_categoria;
-        }      
     }
+
+    
+}    

@@ -23,10 +23,22 @@ public class Servlet extends HttpServlet {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
-            out.println("<head>");            
+            out.println("<head>");    
+            out.println("<meta charset=\"utf-8\">");
             out.println("<title>Servlet Servlet</title>");            
             out.println("</head>");
-            out.println("<body>");                      
+            out.println("<style>");  
+            out.println("h1 {");
+            out.println("color:dodgerblue;font-size:30px;");
+            out.println("border-color:orange;");
+            out.println("text-align: center");            
+            out.println("}");        
+            out.println("h3 {");
+            out.println("text-align: center");            
+            out.println("}");        
+            out.println("</style>");  
+            out.println("<body>");                           
+            out.println("</h2>");            
             out.println("<h1>"+mensaje+"</h1>");
             out.println("<br/>");
             out.println("<br/>");            
@@ -50,10 +62,10 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {                 
-                
-        String ID_nombre = request.getParameter("ID_nombre");       
+        
+        String ID_nombre=request.getParameter("ID_nombre");        
         String nombre_producto = request.getParameter("nombre_producto");        
-        String ID_categoria = request.getParameter("ID_categoria");                
+        String ID_categoria=(request.getParameter("ID_categoria"));             
         String nombre_categoria = request.getParameter("nombre_categoria");                              
         
         articulos.add(new Data(ID_nombre, nombre_producto, ID_categoria, nombre_categoria));                
